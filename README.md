@@ -17,11 +17,17 @@ De modo geral, o projeto destina-se a usuários com acesso à internet interessa
 ****
 # Alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS)
 O projeto está alinhado a diversos Objetivos de Desenvolvimento Sustentável (ODS) definidos pela Organização das Nações Unidas (ONU). Sua proposta contribui diretamente para os eixos de inovação tecnológica, desenvolvimento econômico local e sustentabilidade urbana, conforme detalhado a seguir.
-# ODS 8 – Trabalho Decente e Crescimento Econômico
+
+ODS 8 – Trabalho Decente e Crescimento Econômico
+-
 O ODS 8 tem como meta promover o crescimento econômico sustentado, inclusivo e sustentável, bem como o emprego produtivo e o trabalho decente para todos. O projeto MecOn apoia esses objetivos ao incentivar a digitalização de pequenos negócios, oferecendo às oficinas mecânicas locais maior visibilidade, competitividade e acesso a novos clientes. Ao facilitar a conexão entre consumidores e prestadores de serviço, o sistema contribui para fortalecer a economia local, gerar novas oportunidades de trabalho e estimular a formalização de empreendimentos. Além disso, promove a sustentabilidade financeira das microempresas ao disponibilizar ferramentas tecnológicas acessíveis que aprimoram a gestão, o atendimento e a fidelização de clientes.
-# ODS 9 – Indústria, Inovação e Infraestrutura
+
+ODS 9 – Indústria, Inovação e Infraestrutura
+-
 Esse objetivo visa construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação. O MecOn representa uma iniciativa de inovação tecnológica voltada à transformação digital de um setor tradicionalmente analógico, modernizando o funcionamento das oficinas mecânicas por meio de práticas de gestão baseadas em dados — como o uso de históricos de serviços e avaliações. O projeto também contribui para ampliar o acesso à tecnologia e fortalecer a infraestrutura digital local, conectando de forma eficiente e sustentável empresas e consumidores.
-# ODS 11 – Cidades e Comunidades Sustentáveis
+
+ODS 11 – Cidades e Comunidades Sustentáveis
+-
 O ODS 11 busca tornar as cidades mais inclusivas, seguras, resilientes e sustentáveis. Nesse contexto, o MecOn melhora a mobilidade urbana ao facilitar o acesso a oficinas próximas e confiáveis, reduzindo deslocamentos desnecessários e otimizando o uso dos recursos de transporte. A plataforma ainda incentiva boas práticas de manutenção automotiva, contribuindo para a redução de emissões e desperdícios, e promovendo, assim, a sustentabilidade ambiental urbana. Por fim, o projeto fortalece a inclusão digital e a cidadania tecnológica, conectando cidadãos e empreendedores locais em um ambiente online transparente, acessível e colaborativo.
 ****
 # Escopo
