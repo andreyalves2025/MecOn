@@ -40,24 +40,39 @@ O ODS 11 busca tornar as cidades mais inclusivas, seguras, resilientes e sustent
 Escopo
 
 O projeto compreende o desenvolvimento de funcionalidades essenciais voltadas às necessidades identificadas junto ao público-alvo, buscando garantir praticidade, transparência e eficiência na busca e contratação de serviços automotivos.
+
 Entre as principais funcionalidades previstas, destacam-se:
+
 •	cadastro e autenticação de usuários;
+
 •	busca e filtragem de oficinas mecânicas por localização, tipo de serviço, preço e avaliações de outros usuários;
+
 •	sistema de avaliação e feedback, permitindo que clientes atribuam notas e comentários sobre os serviços realizados;
+
 •	cadastro e gerenciamento de oficinas, incluindo informações como endereço, especialidades, horário de funcionamento e faixa de preço;
+
 •	histórico de manutenção dos veículos, acessível a usuários autenticados;
+
 •	interface responsiva e intuitiva, com foco em acessibilidade e experiência do usuário;
+
 •	integração com banco de dados para armazenamento, consulta e atualização das informações.
+
 Inclui-se ainda o desenvolvimento de um protótipo funcional, a realização de testes de usabilidade com usuários reais e a aplicação de ajustes baseados nos feedbacks coletados.
 ****
 Descrição técnica
 
 O projeto adota metodologias ágeis e segue os princípios do Design Thinking, priorizando o desenvolvimento centrado no usuário e a validação contínua das funcionalidades. As interfaces são projetadas com foco em usabilidade e responsividade, assegurando uma experiência de uso satisfatória tanto em desktops quanto em dispositivos móveis. A arquitetura do sistema foi planejada para garantir desempenho, integridade e segurança das informações.
+
 Tecnologias utilizadas
+
 •	Frontend: HTML5, CSS3 e JavaScript;
+
 •	Backend: PHP;
+
 •	Banco de dados: MySQL;
+
 •	Servidor web: WampServer (ambiente local);
+
 •	Controle de versão: Git e GitHub;
 •	Metodologia de desenvolvimento: Design Thinking e práticas de Scrum (product backlog e sprints curtas);
 •	Ferramentas de design e prototipagem: Figma (protótipo) e Canva (storyboard).
