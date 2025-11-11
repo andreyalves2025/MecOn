@@ -4,20 +4,20 @@ Repositório do Projeto Interdisciplinar MecOn - 2025
 
 Autor: Andrey Dmitrievich Muniz Alves
 
-Descrição do projeto
--
+# Descrição do projeto
+
 O presente projeto propõe o desenvolvimento do MecOn, uma plataforma digital que conecta clientes a oficinas mecânicas locais, permitindo a busca, filtragem e comparação de serviços automotivos por critérios como preço, localização e avaliação de usuários. Além de facilitar o acompanhamento do histórico de manutenção dos veículos, o sistema promove a digitalização de pequenos negócios, ampliando sua visibilidade e competitividade no mercado. O projeto integra conhecimentos de desenvolvimento web, banco de dados e gestão, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU, especialmente os ODS 8 (Trabalho decente e crescimento econômico), 9 (Indústria, inovação e infraestrutura) e 11 (Cidades e comunidades sustentáveis).
 
-Objetivo geral
--
+# Objetivo geral
+
 Desenvolver uma plataforma digital que conecte clientes a oficinas mecânicas locais, facilitando a busca por serviços automotivos e promovendo a transformação digital e o fortalecimento econômico de pequenos empreendedores do setor.
 
-Justificativa
--
+# Justificativa
+
 Consumidores encontram barreiras para localizar e comparar serviços automotivos de forma confiável. Por outro lado, pequenas oficinas mecânicas enfrentam dificuldades em se inserir no ambiente digital, o que limita sua visibilidade e o acesso a novos clientes. Plataformas existentes, como MEU AUTO e OficinApp, oferecem soluções parciais, mas carecem de funcionalidades como histórico de manutenção e filtros avançados de busca. O MecOn surge como uma resposta a essas lacunas, oferecendo uma solução integrada, intuitiva e transparente que contribui para a digitalização de pequenos negócios, melhora a experiência do usuário e fortalece a economia local, em consonância com os ODS da ONU voltados à inovação, infraestrutura e desenvolvimento sustentável.
 ****
-Público Alvo
--
+****
+# Público Alvo
 O público-alvo do projeto MecOn é composto por dois grupos principais. O primeiro engloba consumidores de serviços automotivos, motoristas que buscam oficinas mecânicas confiáveis, próximas e com bom custo-benefício, valorizando a transparência nas avaliações, a possibilidade de comparação de preços e o acesso ao histórico de manutenção de seus veículos. O segundo grupo é formado por proprietários e gestores de pequenas oficinas mecânicas locais, empreendedores que necessitam de maior visibilidade digital e desejam ampliar sua competitividade e presença online.
 De modo geral, o projeto destina-se a usuários com acesso à internet interessados em soluções tecnológicas que simplifiquem o relacionamento entre oficinas e clientes, promovendo a transformação digital e o fortalecimento econômico da comunidade local.
 ****
