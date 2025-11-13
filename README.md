@@ -4,7 +4,7 @@ Repositório do Projeto Interdisciplinar MecOn - 2025
 
 Autor: Andrey Dmitrievich Muniz Alves
 ****
-<img width="1536" height="1024" alt="MecOn final" src="https://github.com/user-attachments/assets/3ee60275-58d0-4791-a548-23ee82965746" />
+<img width="800" height="600" alt="MecOn final" src="https://github.com/user-attachments/assets/3ee60275-58d0-4791-a548-23ee82965746" />
 
 ****
 # Descrição do projeto
