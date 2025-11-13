@@ -4,7 +4,8 @@ Repositório do Projeto Interdisciplinar MecOn - 2025
 
 Autor: Andrey Dmitrievich Muniz Alves
 ****
-<img width="400" height="300" alt="MecOn final" src="https://github.com/user-attachments/assets/3ee60275-58d0-4791-a548-23ee82965746" />
+<img width="911" height="491" alt="MecOn github" src="https://github.com/user-attachments/assets/c17db440-f432-4efb-b786-534212ffea19" />
+
 ****
 # Descrição do projeto
 O presente projeto propõe o desenvolvimento do MecOn, uma plataforma digital que conecta clientes a oficinas mecânicas locais, permitindo a busca, filtragem e comparação de serviços automotivos por critérios como preço, localização e avaliação de usuários. Além de facilitar o acompanhamento do histórico de manutenção dos veículos, o sistema promove a digitalização de pequenos negócios, ampliando sua visibilidade e competitividade no mercado. O projeto integra conhecimentos de desenvolvimento web, banco de dados e gestão, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU, especialmente os ODS 8 (Trabalho decente e crescimento econômico), 9 (Indústria, inovação e infraestrutura) e 11 (Cidades e comunidades sustentáveis).
