@@ -57,7 +57,7 @@ Inclui-se ainda o desenvolvimento de um protótipo funcional, a realização de 
 # Descrição técnica
 O projeto adota metodologias ágeis e segue os princípios do Design Thinking, priorizando o desenvolvimento centrado no usuário e a validação contínua das funcionalidades. As interfaces são projetadas com foco em usabilidade e responsividade, assegurando uma experiência de uso satisfatória tanto em desktops quanto em dispositivos móveis. A arquitetura do sistema foi planejada para garantir desempenho, integridade e segurança das informações.
 
-Tecnologias utilizadas:
+Tecnologias:
 -
 •	Frontend: HTML5, CSS3 e JavaScript;
 
