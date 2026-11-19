@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficinas encontradas - MecOn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header__logo-link" aria-label="MecOn - Página inicial">
+            <!-- TODO: substituir pelo arquivo de logo (PNG/SVG) quando disponível -->
+            <img src="../img/logo.png" alt="MecOn" class="header__logo">
+        </a>
+        <nav class="header__acoes" id="header-acoes"></nav>
+    </header>
+    <main class="main">
+        <form id="form-busca" role="search">
+            <label class="campo-pill">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+                </svg>
+                <input type="text" id="input-busca" name="q" placeholder="Cidade, bairro ou nome da oficina"
+                    aria-label="Buscar">
+            </label>
+        </form>
+        <div class="linha-filtros">
+            <label class="campo-pill">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+                </svg>
+                <select id="select-servico" aria-label="Filtrar por serviço">
+                    <option value="">Serviço</option>
+                </select>
+            </label>
+            <label class="campo-pill">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+                </svg>
+                <select id="select-avaliacao" aria-label="Filtrar por avaliação mínima">
+                    <option value="">Avaliação</option>
+                    <option value="4">A partir de 4 estrelas</option>
+                    <option value="3">A partir de 3 estrelas</option>
+                    <option value="2">A partir de 2 estrelas</option>
+                </select>
+            </label>
+            <label class="campo-pill">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V6m0 10v2" />
+                </svg>
+                <input type="number" id="input-preco-min" min="0" step="0.01" placeholder="Preço mín."
+                    aria-label="Preço mínimo">
+            </label>
+            <label class="campo-pill">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V6m0 10v2" />
+                </svg>
+                <input type="number" id="input-preco-max" min="0" step="0.01" placeholder="Preço máx."
+                    aria-label="Preço máximo">
+            </label>
+            <label class="campo-pill campo-pill--check">
+                <input type="checkbox" id="input-somente-verificadas">
+                Só verificadas
+            </label>
+            <button type="button" id="botao-usar-localizacao" class="botao botao--secundario">
+                📍 Usar minha localização
+            </button>
+        </div>
+        <div id="grade-oficinas" class="grade-oficinas">
+            <!-- Cards inseridos dinamicamente por oficinas.js -->
+        </div>
+        <div id="estado-vazio" class="estado-vazio" style="display: none;">
+            <h3>Nenhuma oficina encontrada</h3>
+            <p>Tente ajustar os filtros ou buscar por outro termo.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__redes">
+            <a href="#" aria-label="MecOn no X">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+            </a>
+            <a href="#" aria-label="MecOn no Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.07 15.6 2.06 15.2 2.06 12s0-3.6.07-4.85C2.28 3.93 3.8 2.38 7.05 2.27 8.3 2.21 8.7 2.2 12 2.2zm0 1.8c-3.14 0-3.51 0-4.74.07-2.27.1-3.39 1.24-3.49 3.49C3.7 8.49 3.7 8.86 3.7 12s0 3.51.07 4.74c.1 2.25 1.22 3.39 3.49 3.49 1.23.06 1.6.07 4.74.07s3.51 0 4.74-.07c2.26-.1 3.39-1.23 3.49-3.49.06-1.23.07-1.6.07-4.74s0-3.51-.07-4.74c-.1-2.25-1.23-3.39-3.49-3.49C15.51 4 15.14 4 12 4zm0 3.05a4.95 4.95 0 110 9.9 4.95 4.95 0 010-9.9zm0 8.17a3.22 3.22 0 100-6.44 3.22 3.22 0 000 6.44zm6.3-8.36a1.16 1.16 0 11-2.32 0 1.16 1.16 0 012.32 0z" />
+                </svg>
+            </a>
+            <a href="#" aria-label="MecOn no YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M21.6 7.2s-.21-1.5-.87-2.16c-.83-.87-1.76-.87-2.18-.92C15.6 4 12 4 12 4h-.01s-3.59 0-6.55.12c-.42.05-1.35.05-2.18.92-.66.66-.87 2.16-.87 2.16S2.18 8.95 2.18 10.7v1.6c0 1.75.21 3.5.21 3.5s.21 1.5.87 2.16c.83.87 1.92.84 2.41.93C7.4 19.05 12 19.1 12 19.1s3.6-.01 6.56-.13c.42-.05 1.35-.05 2.18-.92.66-.66.87-2.16.87-2.16s.21-1.75.21-3.5v-1.6c0-1.75-.21-3.5-.21-3.5zM9.96 14.6V9.4l5.6 2.6z" />
+                </svg>
+            </a>
+        </div>
+        <p class="footer__copyright">2026 © MecOn. Todos os direitos reservados</p>
+        <p class="footer__legal"><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
+        <a href="#" class="footer__contato">Fale Conosco</a>
+    </footer>
+    <script src="../js/auth.js"></script>
+    <script src="../js/oficinas.js"></script>
+</body>
+</html>
