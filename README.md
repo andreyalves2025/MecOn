@@ -72,20 +72,27 @@ Tecnologias:
 •	Ferramentas de design e prototipagem: Figma (protótipo) e Canva (storyboard).
 ****
 # Roteiro de execução do MecOn
--
+
 Antes de começar: certifique-se de ter instalado WampServer, MySQL Workbench e VS Code. No Wamp, use MySQL 8.0.16 ou superior (o schema usa CHECK e a collation utf8mb4_0900_ai_ci) e PHP 7.4 ou superior.
 
 1. Iniciar o Wamp. Abra o WampServer e espere o ícone da bandeja ficar verde. Se ele ficar laranja ou vermelho, o Apache ou o MySQL não subiu; confira se a porta não está ocupada por outro programa.
-2. Copiar o projeto. Abra o arquivo [mecon_projeto_completo.zip](https://github.com/user-attachments/files/35091078/mecon_projeto_completo.zip) Em C:\wamp64\www crie a pasta "mecon". Copie as pastas backend/, frontend/ e logs/ para C:\wamp64\www\mecon\. O nome da pasta precisa ser mecon, porque o frontend chama a API em /mecon/backend. Se quiser, abra essa pasta no VS Code para conferir os arquivos.
+
+2. Copiar o projeto. Abra o arquivo [mecon_projeto_completo.zip](https://github.com/user-attachments/files/35091078/mecon_projeto_completo.zip). Em C:\wamp64\www crie a pasta "mecon". Copie as pastas backend/, frontend/ e logs/ para C:\wamp64\www\mecon\. (O nome da pasta precisa ser mecon, porque o frontend chama a API em /mecon/backend. Se quiser, abra essa pasta no VS Code para conferir os arquivos.)
+
 3. Conectar o Workbench. Abra o MySQL Workbench e crie uma conexão com localhost, a porta do MySQL do Wamp (normalmente 3306) e o usuário root, sem senha, que é o padrão do Wamp.
-4. Criar o banco. No Workbench, execute:
-  sql
+
+4. Criar o banco. No MySQL Workbench, execute:
   CREATE DATABASE mecon CHARACTER SET utf8mb4;
   USE mecon;
-5. Criar as tabelas. Abra o arquivo database/schema.sql no Workbench (File → Open SQL Script) e execute tudo (raio). Isso cria as 23 tabelas. Não rode a pasta migrations/: o schema já inclui tudo.
-6. Carregar os dados de demonstração. Abra database/seed_completo_mecon.sql com o banco mecon selecionado e execute tudo. Ele cria os usuários, as oficinas, as avaliações e o restante dos dados de exemplo. Pode ser executado de novo sem duplicar dados.
+
+5. Criar as tabelas. Abra o arquivo database/schema.sql (disponível no arquivo zipado) no MySQL Workbench (File → Open SQL Script) e execute tudo (raio). Isso cria as 23 tabelas. (Não rode a pasta migrations/: o schema já inclui tudo.)
+
+6. Carregar os dados de demonstração. Abra database/seed_completo_mecon.sql (disponível no arquivo zipado) com o banco mecon selecionado e execute tudo. Ele cria os usuários, as oficinas, as avaliações e o restante dos dados de exemplo. (Pode ser executado de novo sem duplicar dados.)
+
 7. Conferir a conexão. Se o root do seu MySQL tiver senha, edite DB_PASS em backend/config/database.php. Se a porta não for a 3306, ajuste DB_PORT no mesmo arquivo.
+
 8. Abrir o sistema. Acesse localhost/mecon/frontend/index.html pelo navegador.
+
 9. Entrar com as contas de teste. A senha de todas é Teste@123:
   Administrador: admin@example.com
   Cliente: ana.souza@example.com
