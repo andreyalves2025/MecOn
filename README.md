@@ -72,7 +72,7 @@ Tecnologias:
 •	Ferramentas de design e prototipagem: Figma (protótipo) e Canva (storyboard).
 ****
 Roteiro de execução do MecOn
-
+-
 Antes de começar: certifique-se de ter instalado WampServer, MySQL Workbench e VS Code. No Wamp, use MySQL 8.0.16 ou superior (o schema usa CHECK e a collation utf8mb4_0900_ai_ci) e PHP 7.4 ou superior.
 
 1. Iniciar o Wamp. Abra o WampServer e espere o ícone da bandeja ficar verde. Se ele ficar laranja ou vermelho, o Apache ou o MySQL não subiu; confira se a porta não está ocupada por outro programa.
@@ -85,7 +85,7 @@ Antes de começar: certifique-se de ter instalado WampServer, MySQL Workbench e 
 5. Criar as tabelas. Abra o arquivo database/schema.sql no Workbench (File → Open SQL Script) e execute tudo (raio). Isso cria as 23 tabelas. Não rode a pasta migrations/: o schema já inclui tudo.
 6. Carregar os dados de demonstração. Abra database/seed_completo_mecon.sql com o banco mecon selecionado e execute tudo. Ele cria os usuários, as oficinas, as avaliações e o restante dos dados de exemplo. Pode ser executado de novo sem duplicar dados.
 7. Conferir a conexão. Se o root do seu MySQL tiver senha, edite DB_PASS em backend/config/database.php. Se a porta não for a 3306, ajuste DB_PORT no mesmo arquivo.
-8. Abrir o sistema. Acesse http://localhost/mecon/frontend/ pelo navegador. Não use o “Live Server” do VS Code, porque os cookies de sessão quebram entre origens.
+8. Abrir o sistema. Acesse localhost/mecon/frontend/index.html pelo navegador.
 9. Entrar com as contas de teste. A senha de todas é Teste@123:
   Administrador: admin@example.com
   Cliente: ana.souza@example.com
