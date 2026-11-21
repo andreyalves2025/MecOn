@@ -82,9 +82,8 @@ Antes de começar: certifique-se de ter instalado WampServer, MySQL Workbench e 
 3. Conectar o Workbench. Abra o MySQL Workbench e crie uma conexão com localhost, a porta do MySQL do Wamp (normalmente 3306) e o usuário root, sem senha, que é o padrão do Wamp.
 
 4. Criar o banco. No MySQL Workbench, execute:
-
-  CREATE DATABASE mecon CHARACTER SET utf8mb4;
-  USE mecon;
+CREATE DATABASE mecon CHARACTER SET utf8mb4;
+USE mecon;
 
 6. Criar as tabelas. Abra o arquivo database/schema.sql no MySQL Workbench (File → Open SQL Script) e execute tudo (raio). Isso cria as 23 tabelas.
 
