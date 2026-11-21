@@ -77,7 +77,7 @@ Antes de começar: certifique-se de ter instalado WampServer, MySQL Workbench e 
 
 1. Iniciar o Wamp. Abra o WampServer e espere o ícone da bandeja ficar verde. Se ele ficar laranja ou vermelho, o Apache ou o MySQL não subiu; confira se a porta não está ocupada por outro programa.
 
-2. Copiar o projeto. Em C:\wamp64\www crie a pasta "mecon". Copie as pastas backend/, database/, frontend/ e logs/ para C:\wamp64\www\mecon\. (O nome da pasta precisa ser mecon, porque o frontend chama a API em /mecon/backend. Se quiser, abra essa pasta no VS Code para conferir os arquivos.)
+2. Copiar o projeto. Em C:\wamp64\www crie a pasta "mecon". Extraia o conteúdo de [mecon.zip](https://github.com/user-attachments/files/35195638/mecon.zip) e copie-o para C:\wamp64\www\mecon\. (O nome da pasta precisa ser mecon, porque o frontend chama a API em /mecon/backend. Se quiser, abra essa pasta no VS Code para conferir os arquivos.)
 
 3. Conectar o Workbench. Abra o MySQL Workbench e crie uma conexão com localhost, a porta do MySQL do Wamp (normalmente 3306) e o usuário root, sem senha, que é o padrão do Wamp.
 
