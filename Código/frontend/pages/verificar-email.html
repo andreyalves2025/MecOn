@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar email - MecOn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header__logo-link" aria-label="MecOn - Página inicial">
+            <img src="../img/logo.png" alt="MecOn" class="header__logo">
+        </a>
+        <nav class="header__acoes" id="header-acoes"></nav>
+    </header>
+    <main class="main" style="max-width: 480px; text-align:center;">
+        <div id="conteudo-verificacao" class="cartao-formulario">
+            <p>Confirmando seu email…</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">2026 © MecOn. Todos os direitos reservados</p>
+        <p class="footer__legal"><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
+    </footer>
+    <script src="../js/auth.js"></script>
+    <script>
+        (async () => {
+            const container = document.getElementById('conteudo-verificacao');
+            const token = new URLSearchParams(window.location.search).get('token');
+            if (!token) {
+                container.innerHTML = '<h3>Link inválido</h3><p>Nenhum token de verificação foi informado.</p>';
+                return;
+            }
+            try {
+                await chamarApi(`/auth/confirmar_email.php?token=${encodeURIComponent(token)}`);
+                // Se o usuário confirmando é o mesmo logado neste navegador,
+                // atualiza o cache local para não continuar mostrando o
+                // aviso de "email não confirmado" na página de perfil.
+                const usuarioLocal = obterUsuarioLocal();
+                if (usuarioLocal) {
+                    salvarUsuarioLocal({ ...usuarioLocal, email_verificado: true });
+                }
+                container.innerHTML = `
+                    <h3>Email confirmado! ✔</h3>
+                    <p>Sua conta MecOn está totalmente liberada, incluindo avaliar oficinas.</p>
+                    <a href="../index.html" class="botao botao--primario" style="margin-top:12px;">Ir para a página inicial</a>
+                `;
+            } catch (erro) {
+                container.innerHTML = `
+                    <h3>Não foi possível confirmar</h3>
+                    <p>${erro.message}</p>
+                `;
+            }
+        })();
+    </script>
+</body>
+</html>
