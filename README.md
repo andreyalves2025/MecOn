@@ -82,18 +82,19 @@ Antes de começar: certifique-se de ter instalado WampServer, MySQL Workbench e 
 3. Conectar o Workbench. Abra o MySQL Workbench e crie uma conexão com localhost, a porta do MySQL do Wamp (normalmente 3306) e o usuário root, sem senha, que é o padrão do Wamp.
 
 4. Criar o banco. No MySQL Workbench, execute:
+
   CREATE DATABASE mecon CHARACTER SET utf8mb4;
   USE mecon;
 
-5. Criar as tabelas. Abra o arquivo database/schema.sql no MySQL Workbench (File → Open SQL Script) e execute tudo (raio). Isso cria as 23 tabelas.
+6. Criar as tabelas. Abra o arquivo database/schema.sql no MySQL Workbench (File → Open SQL Script) e execute tudo (raio). Isso cria as 23 tabelas.
 
-6. Carregar os dados de demonstração. Abra database/seed_completo_mecon.sql com o banco mecon selecionado no MySQL Workbench e execute tudo. Ele cria os usuários, as oficinas, as avaliações e o restante dos dados de exemplo. (Pode ser executado de novo sem duplicar dados.)
+7. Carregar os dados de demonstração. Abra database/seed_completo_mecon.sql com o banco mecon selecionado no MySQL Workbench e execute tudo. Ele cria os usuários, as oficinas, as avaliações e o restante dos dados de exemplo. (Pode ser executado de novo sem duplicar dados.)
 
-7. Conferir a conexão. Se o root do seu MySQL tiver senha, edite DB_PASS em backend/config/database.php. Se a porta não for a 3306, ajuste DB_PORT no mesmo arquivo.
+8. Conferir a conexão. Se o root do seu MySQL tiver senha, edite DB_PASS em backend/config/database.php. Se a porta não for a 3306, ajuste DB_PORT no mesmo arquivo.
 
-8. Abrir o sistema. Acesse localhost/mecon/frontend/index.html pelo navegador.
+9. Abrir o sistema. Acesse localhost/mecon/frontend/index.html pelo navegador.
 
-9. Entrar com as contas de teste. A senha de todas é Teste@123:
-  Administrador: admin@example.com
-  Cliente: ana.souza@example.com
-  Oficina: autocenter.pinhais@example.com
+10. Entrar com as contas de teste. A senha de todas é Teste@123:
+• Administrador: admin@example.com
+• Cliente: ana.souza@example.com
+• Oficina: autocenter.pinhais@example.com
