@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila de moderação - MecOn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header__logo-link" aria-label="MecOn - Página inicial">
+            <img src="../img/logo.png" alt="MecOn" class="header__logo">
+        </a>
+        <nav class="header__acoes" id="header-acoes"></nav>
+    </header>
+    <main class="main">
+        <a href="admin.html" class="link-auxiliar" style="text-align:left; margin-bottom: 16px;">&larr; Voltar ao
+            painel</a>
+        <h1>Fila de moderação</h1>
+        <p style="color: var(--texto-secundario); margin-bottom: 16px;">
+            Avaliações denunciadas por usuários, mais antigas primeiro. Analise o comentário e decida entre
+            removê-lo ou descartar a denúncia (comentário permanece).
+        </p>
+        <div class="linha-filtros">
+            <label class="campo-pill" style="gap:8px;">
+                <input type="checkbox" id="input-mostrar-descartadas">
+                Mostrar denúncias já descartadas
+            </label>
+        </div>
+        <div id="lista-denuncias-admin" class="lista-admin"></div>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">2026 © MecOn. Todos os direitos reservados</p>
+        <p class="footer__legal"><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
+    </footer>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin-denuncias.js"></script>
+</body>
+</html>

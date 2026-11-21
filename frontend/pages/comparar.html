@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar oficinas - MecOn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .tabela-comparar { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        .tabela-comparar th, .tabela-comparar td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--borda); vertical-align: top; }
+        .tabela-comparar th { background: var(--fundo-secundario, #F7F7F9); font-size: 0.85rem; color: var(--texto-secundario); font-weight: 600; }
+        .tabela-comparar td:first-child, .tabela-comparar th:first-child { font-weight: 600; white-space: nowrap; }
+        .tabela-comparar-wrap { overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header__logo-link" aria-label="MecOn - Página inicial">
+            <img src="../img/logo.png" alt="MecOn" class="header__logo">
+        </a>
+        <nav class="header__acoes" id="header-acoes"></nav>
+    </header>
+    <main class="main" style="max-width: 900px;">
+        <a href="oficinas.html" class="link-auxiliar" style="text-align:left; margin-bottom: 16px;">&larr; Voltar à busca</a>
+        <h1>Comparar oficinas</h1>
+        <div id="conteudo-comparacao">
+            <p>Carregando…</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">2026 © MecOn. Todos os direitos reservados</p>
+        <p class="footer__legal"><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
+    </footer>
+    <script src="../js/auth.js"></script>
+    <script src="../js/comparar.js"></script>
+</body>
+</html>
