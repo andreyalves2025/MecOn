@@ -95,8 +95,8 @@ USE mecon;
 
 10. Entrar com as contas de teste. A senha de todas é Teste@123:
 
-• Administrador: admin@example.com
+  • Administrador: admin@example.com
 
-• Cliente: ana.souza@example.com
+  • Cliente: ana.souza@example.com
 
-• Oficina: autocenter.pinhais@example.com
+  • Oficina: autocenter.pinhais@example.com
