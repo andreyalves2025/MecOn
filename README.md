@@ -93,10 +93,4 @@ USE mecon;
 
 9. Abrir o sistema. Acesse localhost/mecon/frontend/index.html pelo navegador.
 
-10. Entrar com as contas de teste. A senha de todas é Teste@123:
-
-  • Administrador: admin@example.com
-
-  • Cliente: ana.souza@example.com
-
-  • Oficina: autocenter.pinhais@example.com
+10. Entrar com as contas de teste. Administrador: admin@example.com, Cliente: ana.souza@example.com, Oficina: autocenter.pinhais@example.com (A senha de todas é Teste@123)
